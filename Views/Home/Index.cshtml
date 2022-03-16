@@ -1,0 +1,16 @@
+﻿@model IEnumerable<JuanDeDiosFrausto.Models.Movie>
+@{
+    ViewData["Title"] = "Home Page"; 
+}
+
+<div class="text-center">
+    <h1>Peliculas en estreno este mes</h1>
+    @foreach(var movie in Model)
+            {
+                <div>
+                    <h2>@movie.Name</h2>
+                    <img class="d-block w-100" src="@movie.Image" alt="">
+                 </div>
+                    
+            }
+</div>
