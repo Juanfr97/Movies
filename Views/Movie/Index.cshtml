@@ -58,7 +58,7 @@
                 @Html.DisplayFor(modelItem => item.Month)
             </td>
             <td>
-                @Html.DisplayFor(modelItem => item.Image)
+                <img src="@item.Image" width="100px" height="100px">
             </td>
             <td>
                 @Html.DisplayFor(modelItem => item.Duration)
@@ -67,9 +67,9 @@
                 @Html.DisplayFor(modelItem => item.Summary)
             </td>
             <td>
-                @Html.ActionLink("Edit", "Edit", new {  ISAN=item.ISAN  }) |
-                @Html.ActionLink("Details", "Details", new { ISAN=item.ISAN }) |
-                @Html.ActionLink("Delete", "Delete", new { ISAN=item.ISAN })
+                @Html.ActionLink("Edit", "Edit", new {  id=item.MovieId  }) |
+                @Html.ActionLink("Details", "Details", new { id=item.MovieId }) |
+                @Html.ActionLink("Delete", "Delete", new { id=item.MovieId })
             </td>
         </tr>
 }

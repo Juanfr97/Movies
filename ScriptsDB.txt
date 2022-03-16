@@ -1,0 +1,20 @@
+﻿CREATE DATABASE FraustoJuan
+
+CREATE TABLE Movies
+(
+	[ISAN] NVARCHAR(50) NOT NULL PRIMARY KEY, 
+    [Name] NVARCHAR(MAX) NULL, 
+    [Category] NVARCHAR(MAX) NULL, 
+    [Year] INT NULL, 
+    [Month] INT NULL CHECK([Month]<=12 AND [Month]>0),
+    [Image] NVARCHAR(MAX) NULL, 
+    [Duration] NVARCHAR(MAX) NULL, 
+    [Summary] NVARCHAR(MAX) NULL
+)
+SELECT * FROM Movies
+INSERT INTO Movies (ISAN,Name,Category,Year,Month,Image,Duration,Summary) VALUES('900-12304','Batman','Accion',2022,3,'https://www.elsoldemexico.com.mx/gossip/omg/ksf9hb-revelan-trailer-de-the-batman-la-pelicula/alternates/LANDSCAPE_768/Revelan%20tr%C3%A1iler%20de%20The%20Batman,%20la%20pel%C3%ADcula','1:45','Excelente pelicula')
+INSERT INTO Movies (ISAN,Name,Category,Year,Month,Image,Duration,Summary) VALUES('900-12305','IT','Terror',1995,4,'https://www.latercera.com/resizer/QWGMyIU2RnQ4HhbhpE4oM3Nzyf4=/900x600/smart/arc-anglerfish-arc2-prod-copesa.s3.amazonaws.com/public/QHL43XLPZVBMZFMKH3ACMRH7PM.jpg','1:45','Excelente pelicula')
+INSERT INTO Movies (ISAN,Name,Category,Year,Month,Image,Duration,Summary) VALUES('900-12306','Intensamente','Infantil',2015,3,'https://pavlov.psyciencia.com/2016/02/img_0277.jpg','1:45','Excelente pelicula')
+INSERT INTO Movies (ISAN,Name,Category,Year,Month,Image,Duration,Summary) VALUES('900-12307','Contagio zero','Terror',2022,3,'https://static.cinepolis.com/img/peliculas/38731/1/1/38731.jpg','1:45','Excelente pelicula')
+INSERT INTO Movies (ISAN,Name,Category,Year,Month,Image,Duration,Summary) VALUES('900-12308','Buscando a Nemo','Infantil',2001,1,'https://www.elsoldemexico.com.mx/gossip/omg/ksf9hb-revelan-trailer-de-the-batman-la-pelicula/alternates/LANDSCAPE_768/Revelan%20tr%C3%A1iler%20de%20The%20Batman,%20la%20pel%C3%ADcula','1:45','Excelente pelicula')
+INSERT INTO Movies (ISAN,Name,Category,Year,Month,Image,Duration,Summary) VALUES('900-12309','Sonic 2','Infantil',2022,3,'https://www.nintenderos.com/wp-content/uploads/2022/02/Sonic-the-Hedgehog-2-poster-crop.jpg','1:45','Excelente pelicula')

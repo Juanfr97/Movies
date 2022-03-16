@@ -24,7 +24,7 @@ namespace JuanDeDiosFrausto.Controllers
                 List<Movie> movies = new List<Movie>();
                 foreach(var movie in allMovies)
                 {
-                    if (movie.Month == DateTime.Now.Month)
+                    if (movie.Month == DateTime.Now.Month && movie.Year==DateTime.Now.Year)
                     {
                         movies.Add(movie);
                     }

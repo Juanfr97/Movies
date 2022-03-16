@@ -4,6 +4,7 @@ namespace JuanDeDiosFrausto.Models
 {
     public class Movie
     {
+        public int MovieId { get; set; }
         public string ISAN { get; set; }
         public string Name { get; set; }
         public string Category { get; set; }
